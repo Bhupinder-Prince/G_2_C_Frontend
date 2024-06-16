@@ -16,7 +16,7 @@ function ItemsManager(){
   }
   async function doFetchProduct()
   {
-    const url = `https://mern-project-g-2-c-1.onrender.com/manager/fetch-product?email=${obj.email}`; 
+    const url = `https://g-2-c-backend-1.onrender.com/manager/fetch-product?email=${obj.email}`; 
 
     const serverMsg= await axios.get(url);
     console.log(JSON.stringify(serverMsg));
@@ -25,14 +25,14 @@ function ItemsManager(){
 
       alert(JSON.stringify(serverMsg.data.result));                 //Result Array will be fetched from DB                                  
       setResult(serverMsg.data.result);  
-      setPrev(`https://mern-project-g-2-c-1.onrender.com/uploads/${serverMsg.data.result.productpic}`); 
+      setPrev(`https://g-2-c-backend-1.onrender.com/uploads/${serverMsg.data.result.productpic}`); 
     }
     else
       alert("Invalid ID")
   }
   async function doDeleteProduct(product)
   {
-    const url = `https://mern-project-g-2-c-1.onrender.com/manager/delete-product?items=${product}`; 
+    const url = `https://g-2-c-backend-1.onrender.com/manager/delete-product?items=${product}`; 
 
     const serverMsg= await axios.get(url);
     console.log(JSON.stringify(serverMsg));

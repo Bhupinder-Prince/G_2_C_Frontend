@@ -29,7 +29,7 @@ export default function AvailProduct()
   {
     
     setObj({...obj,["productpic"]:event.target.files[0]});
-    setPrev(`https://mern-project-g-2-c-1.onrender.com/uploads/${event.target.files[0]}`);
+    setPrev(`https://g-2-c-backend-1.onrender.com/uploads/${event.target.files[0]}`);
     // alert(obj.productpic);
     // alert(ppath);
   }

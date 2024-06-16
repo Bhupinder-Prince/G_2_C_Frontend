@@ -59,7 +59,7 @@ export default function Profile() {
           {
                 alert(JSON.stringify(servermsg));
               setObj(servermsg.data.result);
-              setprev(`https://mern-project-g-2-c-1.onrender.com/uploads/${servermsg.data.result.adhaarpic}`);
+              setprev(`https://g-2-c-backend-1.onrender.com/uploads/${servermsg.data.result.adhaarpic}`);
           }
           else{
             alert("Profile Not Saved!!!!");
